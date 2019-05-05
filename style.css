@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+button {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid grey;
+    padding: 5px;
+    margin-right: 15px;
+    float: left;
+    color:  #666699;
+    width: 95px;
+    border-radius: 3px;
+}
+
+.photos {
+    width: 69%;
+    margin: auto;
+}
+
+img {
+    width: 21.25%;
+    margin-right: 45px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
+    transition: 400ms;
+}
+
+.identity {
+    display: block;
+}
+
+.webdesign {
+    display: block;
+}
+
+.graphic {
+    display: block;
+}
+
+.logo {
+    display: block;
+}
+
+.allbutton:active + .identity + .webdesign + .graphic + .logo {
+    display: block;
+}
+
+.identitybutton:active + .webdesign + .graphic + .logo {
+    display: none;
+}
+
+.webdesignbutton:active + .graphic + .logo + .identity {
+    display: none;
+}
+
+.graphicbutton:active + .logo + .indetity + .webdesign {
+    display: none;
+}
+
+.logobutton:active + .identity + .webdesign + .graphic {
+    display: none;
+}
